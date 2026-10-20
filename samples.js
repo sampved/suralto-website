@@ -1,0 +1,1 @@
+document.getElementById('expand-tasks')?.addEventListener('click',()=>document.querySelectorAll('.task-detail').forEach(d=>d.open=true));document.getElementById('collapse-tasks')?.addEventListener('click',()=>document.querySelectorAll('.task-detail').forEach(d=>d.open=false));

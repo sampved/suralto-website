@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07130F">
+<title>Page Not Found — Suralto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="premium.css">
+<style>
+.error-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.error-box {
+  max-width: 600px;
+}
+.error-code {
+  font-family: var(--font-heading);
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.error-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.error-description {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.error-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  .error-code {
+    font-size: 5rem;
+  }
+  .error-title {
+    font-size: 2rem;
+  }
+  .error-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .error-links a {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="header-wrap">
+<a href="index.html" class="logo">Suralto</a>
+<nav class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="physical-ai-data.html" class="nav-link">Physical AI</a>
+<a href="finance.html" class="nav-link">Finance</a>
+<a href="law.html" class="nav-link">Law</a>
+<a href="healthcare.html" class="nav-link">Healthcare</a>
+<a href="trust.html" class="nav-link">Trust</a>
+<a href="careers.html" class="nav-link">Careers</a>
+<a href="mailto:info@suralto.com" class="btn-primary">Get Started</a>
+</nav>
+<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</div>
+</header>
+
+<main class="error-content">
+<div class="error-box">
+<div class="error-code">404</div>
+<h1 class="error-title">Page Not Found</h1>
+<p class="error-description">
+The page you're looking for doesn't exist or has been moved. 
+Let's get you back on track.
+</p>
+<div class="error-links">
+<a href="index.html" class="btn-primary">Go Home</a>
+<a href="mailto:info@suralto.com" class="btn-secondary">Contact Us</a>
+</div>
+</div>
+</main>
+
+<script>
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle?.addEventListener('click', () => {
+  const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', !isExpanded);
+  nav.style.display = isExpanded ? 'none' : 'flex';
+});
+</script>
+</body>
+</html>
