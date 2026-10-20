@@ -711,3 +711,274 @@ button:focus-visible {
     color: black;
   }
 }
+
+/* Inner Pages Layout - Orange/Magenta Theme */
+.wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+}
+
+.text-hero {
+  padding: 110px 0 70px;
+}
+
+.text-hero h1 {
+  font-size: clamp(48px, 6vw, 85px);
+  max-width: 1050px;
+}
+
+.lead {
+  max-width: 780px;
+  font-size: 19px;
+  color: #B6C5DD;
+  line-height: 1.8;
+}
+
+.prose-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin: 40px 0;
+}
+
+.prose-grid h2 {
+  font-size: 25px;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.prose-grid p,
+.prose-grid li {
+  color: #AEBED7;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.prose-grid ul {
+  padding-left: 20px;
+}
+
+.prose-grid li {
+  margin-bottom: 13px;
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.commitment-grid article {
+  border-top: 1px solid rgba(255, 122, 26, 0.3);
+  padding-top: 20px;
+}
+
+.commitment-grid h3 {
+  font-size: 23px;
+  letter-spacing: -0.03em;
+  margin-bottom: 15px;
+}
+
+.commitment-grid p {
+  color: #A8BDDB;
+  line-height: 1.85;
+  font-size: 14px;
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-section p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.form {
+  background: #1a1b1f;
+  padding: 30px;
+  border: 1px solid rgba(255, 122, 26, 0.2);
+  border-radius: 8px;
+}
+
+.field {
+  margin-bottom: 17px;
+}
+
+.field label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 8px;
+  color: #C0CBC5;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  background: #0a0b0e;
+  border: 1px solid rgba(255, 122, 26, 0.3);
+  border-radius: 4px;
+  color: #FFFFFF;
+  outline: 0;
+  font-family: inherit;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--orange);
+}
+
+.consent {
+  display: block;
+  color: #BAC9DF;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+.consent input {
+  margin-right: 8px;
+}
+
+.honey {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form button[disabled] {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.form-message {
+  color: var(--orange);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.small-copy {
+  font-size: 12px !important;
+  line-height: 1.8;
+}
+
+.small-copy a,
+.consent a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.copy {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.info-card {
+  min-height: 250px;
+  padding: 28px;
+  background: #1a1b1f;
+  border: 1px solid rgba(255, 122, 26, 0.2);
+  border-radius: 8px;
+}
+
+.info-card h3 {
+  font-size: 21px;
+  letter-spacing: -0.05em;
+  margin: 30px 0 10px;
+}
+
+.info-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.four-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.jobs {
+  display: grid;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.job {
+  border: 1px solid rgba(255, 122, 26, 0.2);
+  padding: 27px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background: #1a1b1f;
+  border-radius: 8px;
+}
+
+.job h3 {
+  margin: 0 0 9px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+
+.job p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.job a {
+  color: var(--orange);
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .prose-grid,
+  .commitment-grid,
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  
+  .four-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .text-hero {
+    padding: 85px 0 40px;
+  }
+  
+  .job {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .four-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .text-hero h1 {
+    font-size: clamp(40px, 8vw, 60px);
+  }
+  
+  .lead {
+    font-size: 16px;
+  }
+}
