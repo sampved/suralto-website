@@ -26,3 +26,26 @@
 @media(prefers-reduced-motion:reduce){.btn,.explorer-menu button{transition:none}.btn:hover{transform:none}}
 
 .review-criterion{min-inline-size:0;margin-inline:0;width:100%}.review-criterion legend{max-width:100%;font-size:14px;line-height:1.6;color:#44613a}.tool-field textarea{box-sizing:border-box}.product-home .explorer-main .sr-status{margin:0}.mini-mark img{width:18px;height:18px;filter:grayscale(1) brightness(1.5)}
+
+/* Suralto Rebrand - Orange/Magenta with Orbitron */
+:root {
+  --bg: #0E0F12 !important;
+  --panel: #1a1b1f !important;
+  --text: #FFFFFF !important;
+  --muted: #8A8F98 !important;
+  --line: rgba(255, 122, 26, 0.2) !important;
+  --accent: #FF7A1A !important;
+  --accent-secondary: #FF2E63 !important;
+}
+
+body { background: #0E0F12; color: #FFFFFF; }
+h1, h2, h3, .big-title, .logo { font-family: 'Orbitron', sans-serif !important; }
+.btn { background: linear-gradient(135deg, #FF7A1A 0%, #FF2E63 100%); border: none; color: #FFFFFF; }
+.btn:hover { filter: brightness(1.1); }
+.btn.secondary { background: transparent; border: 2px solid rgba(255, 122, 26, 0.4); color: #FFFFFF; }
+.btn.secondary:hover { border-color: #FF7A1A; background: rgba(255, 122, 26, 0.1); }
+.hero-gradient-text, .signal-content h1 em, .intro-light h2 span { 
+  background: linear-gradient(135deg, #FF7A1A 0%, #FF2E63 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
