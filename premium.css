@@ -178,11 +178,12 @@ body {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   overflow: hidden;
   padding-top: 85px;
+  padding-bottom: 4rem;
 }
 
 .hero-bg {
@@ -264,12 +265,15 @@ body {
   animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
 }
 
-.hero-gradient-text {
+.hero-gradient-text,
+.gradient-text {
   background: linear-gradient(135deg, var(--orange) 0%, var(--magenta) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: inline-block;
+  font-style: normal;
+  font-family: var(--font-heading);
 }
 
 .hero-description {
